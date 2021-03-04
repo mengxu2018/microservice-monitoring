@@ -1,0 +1,29 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+  endpoint:
+    health:
+      show-details: always
+
+  metrics:
+    tags:
+      application: ingestion-service
+
+server:
+  port : 8082
+
+#spring:
+#  jpa:
+#    database: POSTGRESQL
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: create-drop
+#  datasource:
+#    platform: postgres
+#    url: jdbc:postgresql://localhost:5432/mydb
+#    username: postgres
+#    password: root
+#    driverClassName: org.postgresql.Driver
